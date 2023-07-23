@@ -1,0 +1,316 @@
+:root {
+  --blue: #3a38ff;
+  --navy: #101041;
+  --softpurple: #e5e4ff;
+  --gray: #dfe2e7;
+  --softblue: #f9fbfc;
+  --darkgray: #949293;
+  --darkgray2: #e7ebed;
+  --purple: #6261d8;
+  --green: #316762;
+  --white: #ffffff;
+  --fwbold: 700;
+  --fwextrabold: 800;
+  --fwsemibold: 600;
+  --fwmedium: 500;
+  --fwregular: 400;
+  --fwlight: 300;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--softblue);
+  height: 2700px;
+}
+
+.big-header {
+  font-weight: var(--fwextrabold);
+  color: var(--navy);
+  font-size: 48px;
+  margin: 0;
+}
+
+.small-header {
+  font-weight: var(--fwbold);
+  color: var(--navy);
+  font-size: 28px;
+  margin: 0;
+}
+
+.features-header {
+  font-weight: var(--fwbold);
+  color: var(--navy);
+  font-size: 22px;
+  margin: 0;
+}
+
+.primary-copy {
+  font-weight: var(--fwregular);
+  color: var(--darkgray);
+  line-height: 28px;
+  font-size: 16px;
+  margin: 0;
+}
+
+.small-copy {
+  color: var(--navy);
+  font-weight: var(--fwsemibold);
+  font-size: 14px;
+}
+
+.btn-primary {
+  padding: 12px 20px 12px 20px;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: var(--fwsemibold);
+  border-radius: 50px;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--navy);
+  color: var(--white);
+  transition: all 0.3s ease;
+}
+
+.btn-secondary {
+  padding: 12px 20px 12px 20px;
+  background-color: var(--gray);
+  color: var(--navy);
+  font-size: 16px;
+  font-weight: var(--fwmedium);
+  border-radius: 50px;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: var(--navy);
+  color: var(--white);
+  transition: all 0.3s ease;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: var(--blue);
+  font-weight: var(--fwsemibold);
+  transition: all 0.5s ease;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: var(--navy);
+  transition: all 0.3s ease;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.navbar-brand {
+  font-weight: var(--fwbold);
+  font-size: 28px;
+}
+
+.cashier-navbar {
+  background-color: var(--white);
+  border-bottom-left-radius: 26px;
+  border-bottom-right-radius: 26px;
+  padding: 30px;
+}
+
+.navbar {
+  --bs-navbar-padding-y: 0;
+}
+
+.badge {
+  background-color: var(--softpurple);
+  padding: 8px 16px 8px 16px;
+  width: 303px;
+  height: 37px;
+  border-radius: 50px;
+}
+
+.badge > .icon {
+  float: left;
+}
+
+.badge > .small-copy {
+  padding-top: 4px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.card-brand {
+  background-color: var(--darkgray2);
+  width: 227px;
+  height: 110px;
+  border-radius: 16px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.card-brand > .logo {
+  height: 50px;
+  margin-top: 30px;
+}
+
+.carousel-wrapper {
+  display: flex;
+  height: 110px;
+  animation: movetoleft 25s linear infinite;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  overflow: hidden;
+  height: 110px;
+}
+
+@keyframes movetoleft {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.carousel-wrapper-left {
+  display: flex;
+  height: 110px;
+  animation: movetoright 25s linear infinite;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  overflow: hidden;
+  height: 110px;
+}
+
+@keyframes movetoright {
+  0% {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.features-btn {
+  font-weight: var(--fwmedium);
+  font-size: 16px;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.features-btn:hover {
+  color: var(--navy);
+  text-decoration: underline;
+}
+
+.big-features-card {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--white);
+  border-radius: 16px;
+  padding: 45px;
+  cursor: pointer;
+  padding-bottom: 60px;
+  height: 277.5px;
+}
+
+.icon > .features-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 18px;
+}
+
+.small-features-card {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--white);
+  border-radius: 16px;
+  padding: 45px;
+  cursor: pointer;
+  padding-bottom: 30px;
+  height: 175px;
+}
+
+.features .features-wrapper .copywriting .features-header {
+  padding-top: 10px;
+}
+
+/* Efek blur pada section features */
+
+.features-wrapper:hover .big-features-card:not(:hover) {
+  filter: blur(4px);
+  transition: all 1s ease;
+}
+
+.features-wrapper:hover .small-features-card:not(:hover) {
+  filter: blur(4px);
+  transition: all 1s ease;
+}
+
+/* Section Demo */
+.booking-illustration {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.booking-illustration > img.illustration {
+  width: 428px;
+  height: 446px;
+}
+
+.form-control {
+  border-radius: 50px;
+  border: none;
+  background-color: var(--white);
+  padding: 12px 20px 12px 20px;
+}
+
+.form-select {
+  border-radius: 50px;
+  border: none;
+  background-color: var(--white);
+  padding: 12px 20px 12px 20px;
+}
+
+textarea.form-control {
+  border-radius: 16px;
+}
+
+form .booking-form {
+  width: 433px;
+}
